@@ -7,8 +7,8 @@ Update dependencies in pubspec.yaml to their latest versions.
 The recommended way to get this package is through [pub global](https://www.dartlang.org/tools/pub/cmd/pub-global).
 
 ```sh
-# installs `pubspec-updater` (note the hyphen)
-> pub global activate pubspec_updater
+# installs `pubspec-update` (note the hyphen)
+> pub global activate pubspec_update
 ```
 
 ## Usage

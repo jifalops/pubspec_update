@@ -1,6 +1,6 @@
 name: pubspec_update
 description: Update dependencies in pubspec.yaml to their latest versions.
-version: 0.1.0
+version: 0.1.0+1
 author: Jacob Phillips <jifalops@gmail.com>
 homepage: https://github.com/jifalops/pubspec_update
 
