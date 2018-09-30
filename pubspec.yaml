@@ -1,0 +1,18 @@
+name: pubspec_update
+description: Update dependencies in pubspec.yaml to their latest versions.
+version: 0.1.0
+author: Jacob Phillips <jifalops@gmail.com>
+homepage: https://github.com/jifalops/pubspec_update
+
+environment:
+  sdk: '>=2.0.0 <3.0.0'
+
+dependencies:
+  args: ^1.5.0
+  colorize: ^2.0.0
+
+dev_dependencies:
+  test: ^1.3.3
+
+executables:
+  pubspec-update: pubspec-update
