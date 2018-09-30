@@ -6,7 +6,7 @@ import 'package:colorize/colorize.dart';
 
 /// Word characters with dots.
 /// Dots must be non-consecutive and cannot start or end a package name.
-const packageNameRegex = r'\w(?:\.?\w)*';
+const packageNameRegex = r'[a-zA-Z_](?:\.?\w)*';
 
 /// 0.0.0-prerelease+build
 const packageVersionRegex =
