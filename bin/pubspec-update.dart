@@ -211,6 +211,8 @@ class ChangedPubspec {
             (lines[subIndex].isEmpty || lines[subIndex].startsWith('  '))) {
           final match = depMatcher.firstMatch(lines[subIndex]);
           if (match != null) {
+            // Make sure the next valid line is not a continuation of this
+            // dependency.
             int nextLine = subIndex + 1;
             while (nextLine < lines.length && lines[nextLine].trim().isEmpty)
               nextLine++;
@@ -218,7 +220,7 @@ class ChangedPubspec {
                 !lines[nextLine].startsWith('    ')) {
               final pkg = match.group(1);
               assert(latestVersions.containsKey(pkg));
-              final oldVersion = match.group(2)?.trim();
+              final oldVersion = match.group(2);
               final newVersion = '^${latestVersions[pkg]}';
               if (oldVersion != newVersion) {
                 final change =
